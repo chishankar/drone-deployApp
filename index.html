@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <script src="https://s3.amazonaws.com/drone-deploy-artifacts/angular2/prod/dronedeploy-embedded-api.js"></script>    
   <meta charset="UTF-8">
-  <title>Document</title>
-
-
-  <!-- Feel free to download and modify -->
+  <title>PDF Generator</title>
   <link rel="stylesheet" href="https://s3.amazonaws.com/drone-deploy-plugins/templates/uikit/v1/styles.css">
-
+  <link rel="stylesheet" href="stylesheets/main.css">
 </head>
+
 <body>
 
-  <!-- Change DroneDeploy To your Name -->
-  Hello <span class="accent"><b>Chirag</b></span>
+  <div class="row">
+    <button id="pdf-generate">
+      <div class="col-25">
+        <img align="center" class="icon" src="img/pdf-icon.png">
+        <div id="button-text">Generate</div>
+      </div>
+      <div class="col-75">Generate PDF of this map</div>
+    </button>
+  </div>
+
   <script src="script.js"></script>
 </body>
-</html>
+
+</html> 

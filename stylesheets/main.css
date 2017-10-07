@@ -1,0 +1,91 @@
+#pdf-button {
+    width: 100%;
+}
+
+.row {
+    padding-bottom: 5px;
+}
+
+.row {
+    padding-top: 4px;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: rgba(0, 0, 0, 0.74902);
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin: 5px 0px;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+.icon {
+    height: 36px;
+    width: 36px;
+    text-align: center;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.col-75 {
+    width: 75%;
+    float: left;
+    padding: 10px 0;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+button {
+    font-size: 0.875rem;
+    width: 100%;
+    outline: 0;
+    border: 0px solid #2196F3;
+    color: #2196F3;
+    background-color: transparent;
+    border-radius: 3px;
+    display: inline-block;
+    height: 36px;
+    line-height: 33px;
+    padding: 0;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
