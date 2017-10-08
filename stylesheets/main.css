@@ -93,6 +93,7 @@
     margin:0;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    cursor: pointer;
   }
   
   .row {
@@ -383,6 +384,8 @@
   
 #pdf-button {
     width: 100%;
+    cursor:pointer;
+    
 }
 
 .row {
