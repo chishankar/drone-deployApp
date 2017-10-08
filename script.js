@@ -2,7 +2,7 @@
 var drone_deploy_api = null;
 
 // Starting the generation of combining all the tiles into a pdf
-function generatePDF(){
+function generatePDF(){ 
   // Utilize jsPDF to create a new document.
   const new_doc = new jsPDF()
   /* Initialize DroneDeploy API, create promise chain 
@@ -10,7 +10,7 @@ function generatePDF(){
   new DroneDeploy({version: 1}).then(function(dronedeployApi){
     drone_deploy_api = dronedeployApi
     return drone_deploy_api.Plans.getCurrentlyViewed()
-  }).then(function(plan){
+  }).catch(e => reportError(e,"Error getting map plan.")).then(function(plan){
     /* Make GET request to get the Tiles */
     const zoom_int = parseInt(16)
     return drone_deploy_api.Tiles.get({
@@ -19,15 +19,16 @@ function generatePDF(){
       zoom: zoom_int
     })
     // Gettings the Time image URL's
-  }).then(function(TileFile){
+  }).catch(e => reportError(e,"Error getting the Tiles")).then(function(TileFile){
     return TileFile.tiles
-  }).then(function(url_arr){
+  }).catch(e => reportError(e,"Error getting Tile URLS")).then(function(url_arr){
     for (let x = 0; x <  url_arr.length; i++){
       getBase64ImageViaURL(url_arr[i],function(element_url){
         doc.addImage(element_url,'PNG',10,50)
       })
     }
   })
+
   new_doc.save("Map.pdf")
 }
 
