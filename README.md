@@ -9,7 +9,7 @@ Step 1
     I first read the Design Guidlines [here] (https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html).
     and found the design guidlines very similar to the app I wanted to make:
 
-    ```html
+    ```
         <div class="row">
         <a id="report-button">
             <div class="col-1">
