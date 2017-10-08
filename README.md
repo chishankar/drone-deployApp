@@ -22,6 +22,15 @@ I first read the Design Guidlines [here](https://dronedeploy.gitbooks.io/dronede
      </div>
 
 ### Step 2
+I then read the API Docs regarding Tiles [here](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/tiles.html) and used [jsPDF docs](https://github.com/MrRio/jsPDF) to generate the pdf.
+
+In order to generate a pdf of my current map, which is composed of tiles, I need to get the user's currently viewed plan
+which I can do by calling ```Plans.getCurrentlyViewed()```, which returns back a plethora of imformation ([here](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/plans.html)) including a ```plan id```.
+
+To be able to retreive tiles from the map we have to use a URL template, which we can do by making ```GET``` requests via [```Tiles.get```](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/tiles.html)
+
+
+
 
 
 
