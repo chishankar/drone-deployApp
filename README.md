@@ -1,13 +1,13 @@
 ![](img/dronedeploy.png)
 
-# Challenge Option 3 -> PDF Generator
+# Challenge 3
+## Project Name: PDF Generator
 Create an app for the DroneDeploy platform. The app should provide a button on the data page that will create a PDF of the map shown. For example:
 https://www.dropbox.com/s/af50irnf2mrzhua/Screenshot%202016-12-09%2014.44.51.png?dl=0
 
 When the button is clicked it should download a PDF that contains an image of the map being view. See http://developer.dronedeploy.com ( http://developer.dronedeploy.com ) in particular how to access “Tiles”.
 
 # Process
-
 ### Step 1
 I first read the Design Guidlines [here](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html) and found the design guidlines very similar to the app I wanted to make:
 
@@ -29,6 +29,7 @@ I then read the API Docs regarding Tiles [here](https://dronedeploy.gitbooks.io/
 In order to generate a pdf of my current map, which is composed of tiles, I need to get the user's currently viewed plan
 which I can do by calling ```Plans.getCurrentlyViewed()```, which returns back a plethora of imformation ([here](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/plans.html)) including a ```plan id```.
 
+### Step 3
 To be able to retreive tiles from the map we have to use a URL template, which we can do by making ```GET``` requests via [```Tiles.get```](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/tiles.html) and which requires the ```plan id``` that we acquired previously.
 
  The ```Tiles.get``` returns a response like:
@@ -40,6 +41,7 @@ To be able to retreive tiles from the map we have to use a URL template, which w
 
 We used the  ```plan id``` to get a list of Tiles from which we can then retrieve each ```Tiles URL``` and then add it to the PDF.
 
+### Step 4
 Once we create an array of ```Tiles URL's```, we then need to traverse through the Array, get the image and then add it to the document that we created at the beginning.
 
 So once we have the URL, we need a way of converting the ```Image URL``` to a ```Base64 DataURL```, which can be done through ```HTML Canvas```.
