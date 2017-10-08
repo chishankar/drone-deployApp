@@ -7,7 +7,7 @@ When the button is clicked it should download a PDF that contains an image of th
 # Process
 
 ### Step 1
-I first read the Design Guidlines [here] (https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html) and found the design guidlines very similar to the app I wanted to make:
+I first read the Design Guidlines [I'm an inline-style link](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html) and found the design guidlines very similar to the app I wanted to make:
 
     <div class="row">
         <a id="report-button">
