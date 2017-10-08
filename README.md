@@ -36,6 +36,16 @@ To be able to retreive tiles from the map we have to use a URL template, which w
     template: "https://public-tiles.dronedeploy.com/1477521235_DILLONOPENPIPELINE_ortho_xul/{z}/{x}/{y}.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wdWJsaWMtdGlsZXMuZHJvbmVkZXBsb3kuY29tLzE0Nzc1MjEyMzVfRElMTE9OT1BFTlBJUEVMSU5FX29ydGhvX3h1bC8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNDc4MjE0MjI2fX19XX0_&Signature=RxAMowpa1AxVdJ1HFdduwllksyyP2XGgEteisdAqjPrheTLIyq7-a1Xk68Tx0kxquM9-cY-sY8kbmmmwdpsQgLPc~mg5MlXRICuCunZ~qdZ-9qVMBeTTgH8ZxAqnPfbQ764y~f6CfH1q~gCT0NTHTT4X8~MKmCjztWvhB3ji6NkipzxYrm4osf60FFjf8IuaOUvBtzOv5Q1J6qXXiyRG4AtDmZWeVlSUQ7UH1UtzQpIPfLqq~EgX7XNDqt12rRckkRGWowm5uOGFT62tQ2fgF77KZCScJZ4HbmRFUHcD27GME~5uY6gakA~ydKDIcgX8emKpbENGyjdWJZ1lGggQFA__&Key-Pair-Id=APKAJXGC45PGQXCMCXSA",
     }
 
+We used the  ```plan id``` to get a list of Tiles from which we can then retrieve each ```Tiles URL``` and then add it to the PDF.
+
+Once we create an array of ```Tiles URL's```, we then need to traverse through the Array, get the image and then add it to the document that we created at the beginning.
+
+So once we have the URL, we need a way of converting the ```Image URL``` to a ```Base64 DataURL```, which can be done through ```HTML Canvas```.
+
+So we create a function that does the conversion that accepts the url and a ```callback ```function that adds it in-order to the doc.
+
+
+
 
 
 
