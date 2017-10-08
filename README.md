@@ -1,4 +1,4 @@
-![Screenshot](../img/dronedeploy.png)
+![](img/dronedeploy.png)
 
 # Challenge Option 3 -> PDF Generator
 Create an app for the DroneDeploy platform. The app should provide a button on the data page that will create a PDF of the map shown. For example:
