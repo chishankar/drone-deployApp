@@ -5,9 +5,9 @@ https://www.dropbox.com/s/af50irnf2mrzhua/Screenshot%202016-12-09%2014.44.51.png
 When the button is clicked it should download a PDF that contains an image of the map being view. See http://developer.dronedeploy.com ( http://developer.dronedeploy.com ) in particular how to access “Tiles”.
 
 # Process
+
 ### Step 1
-    I first read the Design Guidlines [here] (https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html).
-    and found the design guidlines very similar to the app I wanted to make:
+I first read the Design Guidlines [here] (https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html) and found the design guidlines very similar to the app I wanted to make:
 
     <div class="row">
         <a id="report-button">
@@ -20,7 +20,8 @@ When the button is clicked it should download a PDF that contains an image of th
             </div>
         </a>
      </div>
-    
+
+### Step 2
 
 
 
