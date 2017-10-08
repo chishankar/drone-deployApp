@@ -30,11 +30,12 @@ which I can do by calling ```Plans.getCurrentlyViewed()```, which returns back a
 To be able to retreive tiles from the map we have to use a URL template, which we can do by making ```GET``` requests via [```Tiles.get```](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/tiles.html) and which requires the ```plan id``` that we acquired previously.
 
  The ```Tiles.get``` returns a response like:
+    ```
     {
     expires: 1478214226365,
     template: "https://public-tiles.dronedeploy.com/1477521235_DILLONOPENPIPELINE_ortho_xul/{z}/{x}/{y}.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wdWJsaWMtdGlsZXMuZHJvbmVkZXBsb3kuY29tLzE0Nzc1MjEyMzVfRElMTE9OT1BFTlBJUEVMSU5FX29ydGhvX3h1bC8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNDc4MjE0MjI2fX19XX0_&Signature=RxAMowpa1AxVdJ1HFdduwllksyyP2XGgEteisdAqjPrheTLIyq7-a1Xk68Tx0kxquM9-cY-sY8kbmmmwdpsQgLPc~mg5MlXRICuCunZ~qdZ-9qVMBeTTgH8ZxAqnPfbQ764y~f6CfH1q~gCT0NTHTT4X8~MKmCjztWvhB3ji6NkipzxYrm4osf60FFjf8IuaOUvBtzOv5Q1J6qXXiyRG4AtDmZWeVlSUQ7UH1UtzQpIPfLqq~EgX7XNDqt12rRckkRGWowm5uOGFT62tQ2fgF77KZCScJZ4HbmRFUHcD27GME~5uY6gakA~ydKDIcgX8emKpbENGyjdWJZ1lGggQFA__&Key-Pair-Id=APKAJXGC45PGQXCMCXSA",
     }
-
+    ```
 
 
 
