@@ -27,7 +27,7 @@ function generatePDF(){
         doc.addImage(element_url,'PNG',10,50)
       })
     }
-  })
+  }).catch(e => reportError(e,"Error"))
 
   new_doc.save("Map.pdf")
 }
